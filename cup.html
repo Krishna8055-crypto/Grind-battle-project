@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI Match UI</title>
+  <style>
+    
+    #body {
+      font-family: Arial, sans-serif;
+      background-color: #e4e4e4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    #container {
+            width: 360px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+   
+    
+ 
+    #tabs {
+      display: flex;
+      justify-content: space-around;
+      background-color: #3a009e;
+      color: #fff;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    #tab1, #tab2, #tab3 {
+      cursor: pointer;
+    }
+    #active-tab {
+      border-bottom: 3px solid #fff;
+    }
+    
+    
+    #match-image {
+      width: 100%;
+      height: auto;
+    }
+   
+    #match-info {
+      padding: 15px;
+      text-align: center;
+    }
+    #match-title {
+      margin: 5px 0;
+    }
+    #match-time {
+      margin: 5px 0;
+      color: #777;
+    }
+ 
+    #details {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      border-top: 1px solid #ddd;
+    }
+    #detail1, #detail2, #detail3, #detail4, #detail5 {
+      text-align: center;
+    }
+    #detail-heading {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+    #detail-info {
+      margin: 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    #join-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-top: 1px solid #ddd;
+    }
+    #spots-left {
+      color: #777;
+      font-size: 14px;
+    }
+    #join-button {
+      background-color: #3a009e;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #div2{ height: 20px;
+            width: 60px;
+            text-align: center;
+            background-color: #ff7f00;
+            border-radius: 5px;
+            border: 0px solid black;}
+            a{color: inherit;
+                text-decoration: none;}
+            
+  </style>
+</head>
+<body id="body">
+    <div id="div2"><a href="home.html">Home</a></div>
+    
+  <div id="container">
+  
+    <div id="tabs">
+        <a href="cog.html">
+      <div id="tab1" class="tab">ONGOING</div>
+      </a>
+      <div id="tab2" class="tab" >UPCOMING</div>
+      <a href="cres.html">
+      <div id="tab3" class="tab">RESULTS</div>
+      </a>
+    </div>
+
+    
+    <img id="match-image" src="./cod/2 (6).jpg" alt="Match Image">
+
+    <div id="match-info">
+      <h2 id="match-title">COD #49786</h2>
+      <p id="match-time">Time: 29/10/2024 at 09:10 PM</p>
+    </div>
+
+    <div id="details">
+      <div id="detail1">
+        <h4 id="detail-heading">PRIZE POOL</h4>
+        <p id="detail-info">1500</p>
+      </div>
+      <div id="detail2">
+        <h4 id="detail-heading">PER KILL</h4>
+        <p id="detail-info">10</p>
+      </div>
+      <div id="detail3">
+        <h4 id="detail-heading">ENTRY FEE</h4>
+        <p id="detail-info">15</p>
+      </div>
+      <div id="detail4">
+        <h4 id="detail-heading">TYPE</h4>
+        <p id="detail-info">Squad</p>
+      </div>
+      <div id="detail5">
+        <h4 id="detail-heading">MAP</h4>
+        <p id="detail-info">BR</p>
+      </div>
+    </div>
+
+    <div id="join-section">
+      <span id="spots-left">Only 10 spots left</span>
+      <button id="join-button">JOIN</button>
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>

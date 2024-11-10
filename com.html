@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Matches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(51, 51, 51); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(0, 0, 0); 
+        }
+
+        #header {
+            background-color: rgb(31, 41, 55); 
+            color: rgb(255, 255, 255); 
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        
+
+        #title {
+            font-size: 20px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        
+
+        #no-matches {
+            color: rgb(255, 165, 0); 
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #message {
+            color: rgb(255, 255, 255); 
+            text-align: center;
+            margin-top: 10px;
+        }
+        a{color: inherit;
+            text-decoration: none;}
+            #div2{ height: 20px;
+            width: 60px;
+            text-align: center;
+            background-color: #ff7f00;
+            border-radius: 5px;
+            border: 0px solid black;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="div2"><a href="home.html">Home</a></div>
+        <h1 id="title">Completed</h1>
+    </div>
+
+    <div id="content">
+        <img src="./image/i (i).png" height="200px ">
+        
+        <div id="no-matches">No Completed matches!</div>
+        <div id="message">You haven't yet participated in any match. Hurry up... Participate to win huge.</div>
+    </div>
+</body>
+</html>

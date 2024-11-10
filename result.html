@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details UI</title>
+    <style>
+    
+        #container {
+            width: 360px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        #header {
+            background-color: #6200ea;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        #matchInfo {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        #matchImage {
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #matchImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #matchDetails {
+            margin-left: 15px;
+        }
+
+        #matchTitle {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #matchTime {
+            color: #666;
+            font-size: 14px;
+        }
+
+        #details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #prizeLabel {
+            text-align: center;
+        }
+
+        #killRewardLabel {
+            text-align: center;
+        }
+
+        #entryFeeLabel {
+            text-align: center;
+        }
+
+        #prize {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #killReward {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #entryFee {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #gameDetails {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #type {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #version {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #map {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #watchButton {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            background-color: #34a853;
+            color: white;
+        }
+
+        #notJoinedButton {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid #6200ea;
+            color: #6200ea;
+            background-color: transparent;
+        }
+        a{color: inherit;
+            text-decoration: none;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="onging.html">
+            <div id="ongoing">ONGOING</div>
+            </a>
+            <a href="bgmiin.html">
+            <div id="upcoming">UPCOMING</div>
+            </a>
+            <div id="results">RESULTS</div>
+        </div>
+
+        <div id="matchInfo">
+            <div id="matchImage">
+                <img src="./bgmi/1 (6).jpg" alt="Match Image">
+            </div>
+            <div id="matchDetails">
+                <div id="matchTitle">BGMI MATCH#49783</div>
+                <div id="matchTime">Time: 29/10/2024 at 06:15 PM</div>
+            </div>
+        </div>
+
+        <div id="details">
+            <div id="prizeLabel">
+                <div>PRIZE POOL</div>
+                <div id="prize">₹1000</div>
+            </div>
+            <div id="killRewardLabel">
+                <div>PER KILL</div>
+                <div id="killReward">₹6</div>
+            </div>
+            <div id="entryFeeLabel">
+                <div>ENTRY FEE</div>
+                <div id="entryFee">₹10</div>
+            </div>
+        </div>
+
+        <div id="gameDetails">
+            <div id="type">TYPE: Duo</div>
+            <div id="version">VERSION: TPP</div>
+            <div id="map">MAP: Erangle</div>
+        </div>
+
+        <div id="buttons">
+            <div id="watchButton">WATCH MATCH</div>
+            <div id="notJoinedButton">NOT JOINED</div>
+        </div>
+    </div>
+</body>
+</html>

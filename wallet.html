@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #header {
+            background-color: #1f2937;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #back-arrow {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        #title {
+            font-size: 20px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #wallet-balance {
+            margin-top: 20px;
+            background-color: #333;
+            width: 90%;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #coin-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        #balance {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+        #wallet-sections {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        #deposited, #winning, #bonus {
+            background-color: white;
+            width: 100px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #deposited img, #winning img, #bonus img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #deposited h2, #winning h2, #bonus h2 {
+            font-size: 24px;
+            color: purple;
+        }
+
+        #actions-section {
+            margin-top: 20px;
+            width: 90%;
+        }
+
+        #actions-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #actions {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        #add-coins, #redeem-coins, #transactions {
+            background-color: white;
+            width: 100px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #add-coins img, #redeem-coins img, #transactions img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #div2{ height: 20px;
+            width: 60px;
+            text-align: center;
+            background-color: #ff7f00;
+            border-radius: 5px;
+            border: 0px solid black;}
+            a{color: inherit;
+                text-decoration: none;}
+                #div2{ height: 20px;
+            width: 60px;
+            text-align: center;
+            background-color: #ff7f00;
+            border-radius: 5px;
+            border: 0px solid black;}
+            
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="div2"><a href="home.html">Home</a> </div>
+        <h1 id="title">My Wallet</h1>
+    </div>
+    
+    <div id="wallet-balance">
+        <img id="coin-icon" src="./image/i (3).png" alt="Coin">
+        <span id="balance">0</span>
+    </div>
+    
+    <div id="wallet-sections">
+        <div id="deposited">
+            <img src="./image/i (3).png" alt="Coin">
+            <h2>0</h2>
+            <p>Deposited</p>
+        </div>
+        <div id="winning">
+            <img src="./image/i (3).png" alt="Coin">
+            <h2>0</h2>
+            <p>Winning</p>
+        </div>
+        <div id="bonus">
+            <img src="./image/i (3).png" alt="Coin">
+            <h2>0</h2>
+            <p>Bonus</p>
+        </div>
+    </div>
+    
+    <div id="actions-section">
+        <h2 id="actions-title">My Wallet</h2>
+        <div id="actions">
+            <div id="add-coins">
+                <img src="./image/i (7).png" alt="Add Coins">
+                <p>Add Coins</p>
+            </div>
+            <div id="redeem-coins">
+                <img src="./image/i (7).png" alt="Redeem Coins">
+                <p>Redeem Coins</p>
+            </div>
+            <div id="transactions">
+                <img src="./image/i (7).png" alt="Transactions">
+                <p>History</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

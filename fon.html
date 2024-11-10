@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI Match UI</title>
+  <style>
+   
+    #body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    #container {
+            width: 360px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+ 
+    #tabs {
+      display: flex;
+      justify-content: space-around;
+      background-color: #3a009e;
+      color: #fff;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    #tab1, #tab2, #tab3 {
+      cursor: pointer;
+    }
+    #active-tab {
+      border-bottom: 3px solid #fff;
+    }
+
+    #match-card {
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #match-header {
+      display: flex;
+      align-items: center;
+    }
+    #match-logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    #match-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #match-time {
+      color: #777;
+      font-size: 14px;
+    }
+
+    #details {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+    }
+    .detail {
+      text-align: center;
+    }
+    #detail-heading {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+    #detail-info {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    #spectate-button {
+      display: block;
+      width: 95%;
+      margin-top: 15px;
+      padding: 10px;
+      border: 2px solid #0c8ed9;
+      color: #0c8ed9;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    a{color: inherit;
+        text-decoration: none;}
+    
+  </style>
+</head>
+<body id="body">
+  <div id="container">
+    
+    <div id="tabs">
+      <div id="tab1">ONGOING</div>
+      <a href="free up.html">
+      <div id="tab2" id="active-tab">UPCOMING</div>
+      </a>
+      <a href="fres.html">
+      <div id="tab3">RESULTS</div>
+    </div>
+    </div>
+
+    <div id="match-card">
+      <div id="match-header">
+        <img id="match-logo" src="./free fire/3 (5).jpg" alt="Logo">
+        <div>
+          <div id="match-title">Free Fire #49784</div>
+          <div id="match-time">Time: 29/10/2024 at 07:20 PM</div>
+        </div>
+      </div>
+      
+      <div id="details">
+        <div id="prize-pool" class="detail">
+          <div id="detail-heading">PRIZE POOL</div>
+          <div id="detail-info">1200</div>
+        </div>
+        <div id="per-kill" class="detail">
+          <div id="detail-heading">PER KILL</div>
+          <div id="detail-info">7</div>
+        </div>
+        <div id="entry-fee" class="detail">
+          <div id="detail-heading">ENTRY FEE</div>
+          <div id="detail-info">12</div>
+        </div>
+        <div id="type" class="detail">
+          <div id="detail-heading">TYPE</div>
+          <div id="detail-info">Squad</div>
+        </div>
+        <div id="version" class="detail">
+          <div id="detail-heading">VERSION</div>
+          <div id="detail-info">TPP</div>
+        </div>
+        <div id="map" class="detail">
+          <div id="detail-heading">MAP</div>
+          <div id="detail-info" style="color: black; font-weight: bold;">Bermuda</div>
+        </div>
+      </div>
+      
+      <a href="#" id="spectate-button">SPECTATE</a>
+    </div>
+  </div>
+</body>
+</html>

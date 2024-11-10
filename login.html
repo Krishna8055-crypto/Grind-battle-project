@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #login{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            color: #6c1ef1;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+       
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+       
+
+        #password {
+            display: block;
+            text-align: right;
+            font-size: 14px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        #loginb{
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #6c1ef1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #signup{
+            color: #000000;
+            font-size: 16px;
+        }
+        </style>
+</head>
+<body>
+
+<div id="login">
+    <h1>Welcome to, <br> Login</h1>
+
+    <div id="input">
+        <input type="text" placeholder="Email/Mobile No/Username">
+    </div>
+
+    <div id="input" style="position:relative;">
+        <input type="password" placeholder="Password">
+       
+    </div>
+
+    <a href="www.google.com" id="password">Forgot Password?</a>
+
+   <a href="home.html"> <button id="loginb">LOGIN</button></a>
+
+    
+
+    <p id="signup">Don't have an account? <a href="signup.html">Sign Up</a></p>
+</div>
+
+</body>
+</html>
